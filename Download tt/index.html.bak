@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader - Download Video TikTok Tanpa Watermark</title>
+    <meta name="description" content="Download video TikTok dengan mudah, cepat, dan gratis. Tanpa watermark, tanpa registrasi.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-tiktok"></i>
+                <h1>TikTok Downloader</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#how-to">Cara Download</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Download Video TikTok dengan Mudah</h2>
+                    <p>Unduh video TikTok favorit Anda tanpa watermark, gratis, dan tanpa perlu registrasi.</p>
+                    
+                    <div class="download-form">
+                        <input type="text" id="tiktok-url" placeholder="Tempel link video TikTok di sini...">
+                        <button id="download-btn">Download Video</button>
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <p>Cepat & Mudah</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <p>Aman & Terpercaya</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-download"></i>
+                            <p>Tanpa Watermark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to" class="how-to">
+            <div class="container">
+                <h2>Cara Download Video TikTok</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Salin link video TikTok dari aplikasi</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Tempel link di kolom di atas</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Klik tombol "Download Video"</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <p>Video siap diunduh tanpa watermark</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results" id="results" style="display: none;">
+            <div class="container">
+                <h2>Video Siap Diunduh</h2>
+                <div class="video-preview">
+                    <video id="video-preview" controls></video>
+                </div>
+                <div class="download-options">
+                    <button id="download-hd" class="download-option">Download HD</button>
+                    <button id="download-sd" class="download-option">Download SD</button>
+                    <button id="download-audio" class="download-option">Download Audio</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="rating-section">
+            <div class="container">
+                <h2>Rating & Ulasan</h2>
+                <div class="rating-container">
+                    <div class="rating-stats">
+                        <div class="average-rating">
+                            <span class="rating-number">4.8</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Berdasarkan 1,245 ulasan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="add-rating">
+                        <h3>Beri Rating Website Kami</h3>
+                        <div class="star-rating">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <textarea id="comment-text" placeholder="Tulis ulasan Anda tentang website ini..."></textarea>
+                        <button id="submit-rating">Kirim Ulasan</button>
+                    </div>
+                </div>
+                
+                <div class="comments-section">
+                    <h3>Ulasan Pengguna</h3>
+                    <div class="comments-list" id="comments-list">
+                        <!-- Komentar akan dimuat di sini -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Pertanyaan Umum</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah website ini gratis?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, website ini sepenuhnya gratis untuk digunakan. Tidak ada biaya tersembunyi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah video yang diunduh memiliki watermark?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tidak, video yang diunduh melalui website ini tidak memiliki watermark TikTok.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah saya perlu mendaftar atau login?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tidak, Anda tidak perlu mendaftar atau login untuk menggunakan website ini.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah aman menggunakan website ini?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, website ini aman digunakan. Kami tidak menyimpan data pribadi pengguna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TikTok Downloader</h3>
+                    <p>Download video TikTok dengan mudah dan cepat tanpa watermark.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#how-to">Cara Download</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TikTok Downloader. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
